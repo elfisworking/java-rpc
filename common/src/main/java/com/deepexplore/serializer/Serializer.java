@@ -1,0 +1,6 @@
+package com.deepexplore.serializer;
+
+public abstract class Serializer {
+    public abstract <T> byte[] serialize(T obj);
+    public abstract <T> Object deserialize(byte[] bytes, Class<T> cls);
+}
